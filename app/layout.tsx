@@ -21,6 +21,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             <Link href="/"><strong>Stressfree Traveller</strong></Link>
             <div style={{ display: 'flex', gap: '.8rem', alignItems: 'center' }}>
               <Link href="/saved">Saved</Link>
+              <Link href="/admin/pages/new">Create Page</Link>
               {session ? (
                 <form action="/api/auth/logout" method="post">
                   <button className="secondary" type="submit">Logout</button>
